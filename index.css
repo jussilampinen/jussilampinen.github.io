@@ -1,3 +1,29 @@
-body {
+body{
+    background-color: #3D352C;
+}
+
+h1 {
+    color: #FFF9EB;
+    font-size: 32;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+h2 {
+    color: #FFF9EB;
+    font-size: 24;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+p{
+    color: #ACAEAD;
+    font-size: 16;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+div {
+    text-align: center;
     background-color: #3D352C;
 }
