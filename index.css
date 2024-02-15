@@ -4,6 +4,12 @@ body {
 
 h1 {
     color: #FFF9EB;
+    font-size: 32;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2 {
+    color: #FFF9EB;
     font-size: 24;
     font-family: 'Times New Roman', Times, serif;
 }
