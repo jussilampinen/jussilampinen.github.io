@@ -34,3 +34,7 @@ div {
     text-align: center;
     background-color: #3D352C;
 }
+
+img {
+    border-radius: 8px;
+}
