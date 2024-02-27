@@ -30,12 +30,12 @@ p{
     text-align: center;
 }
 
-div {
-    text-align: center;
+header {
+    background: #A13520;
 }
 
 nav {
-
+    color: #FFF9EB;
 }
 
 footer {
