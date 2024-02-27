@@ -31,12 +31,14 @@ p{
 }
 
 header {
-    background: #A13520;
-    text-align: right;
+    background: #3D352C;
+    text-align: center;
 }
 
 nav {
     color: #FFF9EB;
+    background: #A13520;
+    text-align: right;
 }
 
 footer {
