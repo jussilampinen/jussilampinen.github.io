@@ -40,6 +40,7 @@ nav {
     background: #A13520;
     text-align: right;
     font-size: 16;
+    display: inline;
 }
 
 footer {
