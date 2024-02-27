@@ -42,6 +42,8 @@ nav {
     text-align: right;
     font-size: 16;
     display: inline;
+    width: 100%;
+    right: 0%;
 }
 
 footer {
