@@ -32,6 +32,15 @@ p{
 
 div {
     text-align: center;
-    background-color: #3D352C;
+    background-color: #A13520;
+}
+
+.image {
+    width: 400px;
+    height: 600px;
+}
+
+footer {
+    background-color: #A13520;
 }
 
