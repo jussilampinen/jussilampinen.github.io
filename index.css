@@ -33,6 +33,7 @@ p{
 header {
     background: #3D352C;
     text-align: center;
+    width: 100%;
 }
 
 nav {
@@ -41,10 +42,6 @@ nav {
     text-align: right;
     font-size: 16;
     display: inline;
-    left: 0%;
-    top: 0%;
-    right: 0%;
-    width: 100%;
 }
 
 footer {
