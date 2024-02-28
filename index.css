@@ -31,19 +31,22 @@ p{
 }
 
 header {
-    background: #3D352C;
+    background: #A13520;
     text-align: center;
     width: 100%;
+    top: 0%;
+    width: 100%;
+    
+
 }
 
-nav {
+nav a {
     color: #FFF9EB;
     background: #A13520;
     text-align: right;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 16;
     display: inline;
-    width: 100%;
-    right: 0%;
 }
 
 footer {
