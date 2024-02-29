@@ -43,6 +43,7 @@ p{
     left: 0%;
     padding: 14px 16px;
     margin-bottom: 14px;
+    position: fixed;
 }
 
 .topnav a {
