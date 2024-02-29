@@ -40,13 +40,15 @@ header {
 
 }
 
-.nav {
+.nav a {
     color: #FFF9EB;
     background: #A13520;
     text-align: right;
     font-family: 'Times New Roman', Times, serif;
     font-size: 16;
     display: inline;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 footer {
