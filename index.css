@@ -46,15 +46,15 @@ header {
     font-family: 'Times New Roman', Times, serif;
     font-size: 16;
     display: inline;
-    padding: 14px 16px;
+    padding: 14% 16%;
     text-decoration: none;
     float: right;
-    margin: 14px 14px;
+    margin: 14% 14%;
 }
 
 .logo {
     background: #A13520;
-    padding: 14px 16px;
+    padding: 10% 16%;
 }
 
 .image {
