@@ -53,12 +53,12 @@ header {
 
 .logo {
     background: #A13520;
-    padding: 14pc 16px;
+    padding: 14px 16px;
 }
 
 .image {
-    width: 50%;
-    height: 50%;
+    width: 600;
+    height: 400;
 }
 
 footer {
