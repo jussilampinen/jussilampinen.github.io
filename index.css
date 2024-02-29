@@ -35,19 +35,23 @@ header {
     text-align: center;
     width: 100%;
     top: 0%;
-    max-height: 3%;
     
+    
+}
+
+.topnav {
+    background: #A13520;
+    overflow: hidden;
 }
 
 .nav a {
     color: #FFF9EB;
     background: #A13520;
-    text-align: right;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 16;
-    display: inline;
-    text-decoration: none;
     float: right;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16;
+
 }
 
 .logo {
