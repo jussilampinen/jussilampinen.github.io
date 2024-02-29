@@ -38,12 +38,14 @@ p{
     overflow: hidden;
     text-decoration: none;
     text-align: right;
+    
     width: 100%;
     top: 0%;
-    left: 0%;
+    position: fixed;
+
     padding: 14px 16px;
     margin-bottom: 14px;
-    position: fixed;
+
 }
 
 .topnav a {
