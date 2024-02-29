@@ -42,16 +42,16 @@ header {
 .topnav {
     background: #A13520;
     overflow: hidden;
+    
 }
 
 .topnav a {
     color: #FFF9EB;
     background: #A13520;
-    float: right;
+    text-align: right;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 16;
-
 }
 
 .logo {
