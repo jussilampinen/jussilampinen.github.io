@@ -57,11 +57,15 @@ p{
     text-decoration: none;
 }
 
-/* Banner */
+/* Banner + text */
 
 .banner {
     text-align: center;
     padding: 14px 16px;
+}
+
+.EsiMFD {
+    text-align: right;
 }
 
 /* footer */
