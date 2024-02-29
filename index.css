@@ -2,6 +2,7 @@ body{
     background-color: #3D352C;
 }
 
+/* teksti */
 h1 {
     color: #FFF9EB;
     font-size: 32;
@@ -30,6 +31,8 @@ p{
     text-align: center;
 }
 
+/* navbar */
+
 .topnav {
     background: #A13520;
     overflow: hidden;
@@ -51,10 +54,14 @@ p{
     text-decoration: none;
 }
 
+/* Banner */
+
 .banner {
     text-align: center;
     padding: 14px 16px;
 }
+
+/* footer */
 
 footer {
     background: #A13520;
