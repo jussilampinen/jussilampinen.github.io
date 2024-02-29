@@ -64,3 +64,8 @@ footer {
     flex-direction: row;
 }
 
+.banner {
+    text-align: center;
+    padding-top: 2%;
+}
+
