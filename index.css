@@ -35,8 +35,6 @@ header {
     text-align: center;
     width: 100%;
     top: 0%;
-    
-    
 }
 
 .topnav {
@@ -53,8 +51,8 @@ header {
     font-size: 16;
 }
 
-.logo {
-    background: #A13520;
+.banner {
+    text-align: center;
 }
 
 footer {
@@ -67,8 +65,5 @@ footer {
     flex-direction: row;
 }
 
-.banner {
-    text-align: center;
-    padding-top: 2%;
-}
+
 
