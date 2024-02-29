@@ -35,7 +35,8 @@ header {
     text-align: center;
     width: 100%;
     top: 0%;
-    padding: 14px 16px;
+    padding: 5% 7%;
+    max-height: 10%;
     
 }
 
@@ -46,20 +47,14 @@ header {
     font-family: 'Times New Roman', Times, serif;
     font-size: 16;
     display: inline;
-    padding: 14% 16%;
+    padding: 5% 7%;
     text-decoration: none;
     float: right;
-    margin: 14% 14%;
 }
 
 .logo {
     background: #A13520;
-    padding: 10% 16%;
-}
-
-.image {
-    width: 600;
-    height: 400;
+    padding: 5% 7%;
 }
 
 footer {
