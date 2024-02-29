@@ -42,7 +42,7 @@ header {
 .topnav {
     background: #A13520;
     overflow: hidden;
-    
+    text-decoration: none;
 }
 
 .topnav a {
@@ -50,7 +50,6 @@ header {
     background: #A13520;
     text-align: right;
     padding: 14px 16px;
-    text-decoration: none;
     font-size: 16;
 }
 
