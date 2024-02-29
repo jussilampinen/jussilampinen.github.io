@@ -41,6 +41,7 @@ header {
     background: #A13520;
     overflow: hidden;
     text-decoration: none;
+    text-align: right;
 }
 
 .topnav a {
