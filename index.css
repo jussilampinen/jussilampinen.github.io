@@ -76,6 +76,7 @@ p{
     margin: 2%;
     display: flex;
     flex-wrap: wrap;
+    -ms-flex-align: center;
 }
 
 .imgmfd {
