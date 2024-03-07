@@ -30,6 +30,133 @@ p{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.centre {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    font-size: 16;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ACAEAD;
+}
+
+ul {
+    font-size: 16;
+    color: #ACAEAD;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Tabletti */
+
+@media (max-width: 1024px) {
+    
+    .topnav {
+        background: #A13520;
+        overflow: hidden;
+        text-decoration: none;
+        text-align: right;
+        width: 100%;
+        top: 0%;
+        position: fixed;
+        left: 0%;
+        padding: 1% 1%;
+        margin-bottom: 1%;
+        z-index: 1000; /* Ensure the navigation bar stays on top */
+    }
+    
+    .topnav a {
+        color: #FFF9EB;
+        background: #A13520;
+        text-align: left;
+        margin: 1% 2%;
+        font-size: 16px; /* Added 'px' to the font size */
+        text-decoration: none;
+    }
+    
+    /* Banner + text */
+    
+    .banner {
+        position: relative;
+        background-image: url(images/banner\ \(1\).jpg);
+        height: 600px;
+        background-size: cover;
+        background-position: center;
+        z-index: 1; /* Ensure the banner is behind the navigation bar */
+    }
+    
+    .banner-text {
+        padding-top: 12%;
+        text-align: center;
+    }
+    
+    .cta {
+        position: absolute;
+        top: 50%; /* Adjust as needed */
+        left: 50%; /* Adjust as needed */
+        transform: translate(-50%, -50%); /* Center the button */
+        z-index: 2; /* Ensure the button is above the banner */
+    }
+    
+    .btn {
+        font-family: 'Times New Roman', Times, serif;
+        background-color: #A13520;
+        color: #FFF9EB;
+        text-decoration: none;
+        padding: 0.5rem;
+        border: 1px solid #A13520;
+    }
+    
+    .EsiMFD {
+        text-align: right;
+        margin: 2%;
+        
+    }
+    
+    .imgmfd {
+        float: left;
+        
+    }
+    
+    .EsiRule {
+        text-align: left;
+    }
+    
+    .meista {
+        text-align: center;
+    }
+    
+    .me {
+        text-align: right;
+    }
+    
+    .yritys {
+        text-align: left;
+    }
+    
+    
+    
+    
+    /* footer */
+    
+    .footer {
+        background: #A13520; /* Background color */
+        position: fixed; /* Fixed position */
+        left: 0;
+        bottom: 0;
+        width: 100%; /* Full width */
+        height: 80px; /* Adjust height as needed */
+        text-align: center; /* Center-align the content */
+        color: #FFF9EB; /* Text color */
+        padding-top: 20px; /* Add padding for vertical alignment */
+        box-sizing: border-box; /* Include padding in total height */
+        z-index: 1000; /* Ensure the footer is above other content */
+    }
+    
+}
+
+@media screen {
+
 /* navbar */
 
 .topnav {
@@ -37,15 +164,13 @@ p{
     overflow: hidden;
     text-decoration: none;
     text-align: right;
-    
     width: 100%;
     top: 0%;
     position: fixed;
     left: 0%;
-
     padding: 1% 1%;
     margin-bottom: 1%;
-
+    z-index: 1000; /* Ensure the navigation bar stays on top */
 }
 
 .topnav a {
@@ -53,30 +178,50 @@ p{
     background: #A13520;
     text-align: left;
     margin: 1% 2%;
-    font-size: 16;
+    font-size: 16px; /* Added 'px' to the font size */
     text-decoration: none;
 }
 
 /* Banner + text */
 
 .banner {
-
+    position: relative;
+    background-image: url(images/banner\ \(1\).jpg);
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    z-index: 1; /* Ensure the banner is behind the navigation bar */
 }
 
 .banner-text {
+    padding-top: 12%;
     text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+}
+
+.cta {
+    position: absolute;
+    top: 50%; /* Adjust as needed */
+    left: 50%; /* Adjust as needed */
+    transform: translate(-50%, -50%); /* Center the button */
+    z-index: 2; /* Ensure the button is above the banner */
+}
+
+.btn {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #A13520;
+    color: #FFF9EB;
+    text-decoration: none;
+    padding: 0.5rem;
+    border: 1px solid #A13520;
+}
+.hedding1 {
+    top: 3%;
 }
 
 .EsiMFD {
     text-align: right;
     margin: 2%;
-    display: flex;
-    flex-wrap: wrap;
-    -ms-flex-align: center;
+    
 }
 
 .imgmfd {
@@ -91,17 +236,40 @@ p{
 .meista {
     text-align: center;
 }
+
+.me {
+    text-align: right;
+}
+
+.yritys {
+    text-align: left;
+}
+
+.hedding1 {
+   text-align: center; 
+}
+
+
 /* footer */
 
-footer {
-    background: #A13520;
-    position: fixed;
-    left: 0%;
-    bottom: 0%;
-    width: 100%;
-    max-height: 15%;
-    flex-direction: row;
-    text-align: center;
+.footer {
+    background: #A13520; /* Background color */
+    position: fixed; /* Fixed position */
+    left: 0;
+    bottom: 0;
+    width: 100%; /* Full width */
+    height: 80px; /* Adjust height as needed */
+    text-align: center; /* Center-align the content */
+    color: #FFF9EB; /* Text color */
+    padding-top: 20px; /* Add padding for vertical alignment */
+    box-sizing: border-box; /* Include padding in total height */
+    z-index: 1000; /* Ensure the footer is above other content */
 }
+
+}
+
+
+
+
 
 
