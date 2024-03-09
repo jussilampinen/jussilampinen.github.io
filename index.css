@@ -225,12 +225,16 @@ ul {
 }
 
 .EsiMFD img {
-    
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #A13520;
+    color: #FFF9EB;
+    text-decoration: none;
+    padding: 0.5rem;
+    border: 1px solid #A13520;
 }
 
-.imgmfd {
-    float: left;
-    
+.btnEsiMFD {
+
 }
 
 .EsiRule {
