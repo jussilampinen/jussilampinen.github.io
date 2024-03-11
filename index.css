@@ -1,55 +1,62 @@
 body{
     background-color: #3D352C;
+    margin: 0;
+    padding-bottom: 10%;
 }
 
-/* teksti */
-h1 {
-    color: #FFF9EB;
-    font-size: 32;
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-}
-
-h2 {
-    color: #FFF9EB;
-    font-size: 24;
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-}
-
-h3 {
-    color: #FFF9EB;
-    font-size: 22;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
-}
-
-p{
-    color: #ACAEAD;
-    font-size: 16;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.centre {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-th {
-    font-size: 16;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #ACAEAD;
-}
-
-ul {
-    font-size: 16;
-    color: #ACAEAD;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-/* Tabletti */
-
-@media (max-width: 1024px) {
+@media screen and (max-width: 600px){
+    body{
+        background-color: #3D352C;
+        margin: 0;
+        padding-bottom: 35%;
+    }
+    
+        h1 {
+            color: #FFF9EB;
+            font-size: 32;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+        
+        h2 {
+            color: #FFF9EB;
+            font-size: 30;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            
+        }
+        
+        h3 {
+            color: #FFF9EB;
+            font-size: 22;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+        
+        p{
+            color: #ACAEAD;
+            font-size: 16;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        
+        .centre {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        th {
+            font-size: 16;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: #ACAEAD;
+        }
+        
+        ul {
+            font-size: 16;
+            color: #ACAEAD;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    
+    /* navbar */
     
     .topnav {
         background: #A13520;
@@ -62,7 +69,7 @@ ul {
         left: 0%;
         padding: 1% 1%;
         margin-bottom: 1%;
-        z-index: 1000; /* Ensure the navigation bar stays on top */
+        z-index: 1000; 
     }
     
     .topnav a {
@@ -70,19 +77,25 @@ ul {
         background: #A13520;
         text-align: left;
         margin: 1% 2%;
-        font-size: 16px; /* Added 'px' to the font size */
+        font-size: 16px; 
         text-decoration: none;
     }
+    
+    .topnav img {
+        max-width: 6%;
+        float: left;
+    }
+    
     
     /* Banner + text */
     
     .banner {
         position: relative;
         background-image: url(images/banner\ \(1\).jpg);
-        height: 600px;
+        height: 300px;
         background-size: cover;
         background-position: center;
-        z-index: 1; /* Ensure the banner is behind the navigation bar */
+        z-index: 1; 
     }
     
     .banner-text {
@@ -92,10 +105,11 @@ ul {
     
     .cta {
         position: absolute;
-        top: 50%; /* Adjust as needed */
-        left: 50%; /* Adjust as needed */
-        transform: translate(-50%, -50%); /* Center the button */
-        z-index: 2; /* Ensure the button is above the banner */
+        top: 20%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+        z-index: 2; 
+        border-radius: 5px;
     }
     
     .btn {
@@ -105,57 +119,539 @@ ul {
         text-decoration: none;
         padding: 0.5rem;
         border: 1px solid #A13520;
+        border-radius: 5px;
+    }
+    /* Etusivun otsikot*/
+    
+    .EtuH2 {
+        padding-top: 2%;
+    }
+    
+    /* Etusivun tarina esittely */
+    
+    .EsiTarina {
+        position: relative; 
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        flex-direction: column; 
+        margin: 2% 2%;
+        max-width: 80%;
+        margin-left: 10%;
+        border: 3px solid #A13520; 
+        padding: 10px; 
     }
     
     .EsiMFD {
-        text-align: right;
-        margin: 2%;
-        
+        position: relative; 
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px; 
     }
     
-    .imgmfd {
-        float: left;
-        
+    .textMFD {
+        flex: 1;
+        text-align: center; 
+        margin-top: 90%;
     }
+    
+    .buttonContainer {
+        text-align: center; 
+    }
+    
+    .btnEsiMFD {
+        margin-top: 10px; 
+        font-family: 'Times New Roman', Times, serif;
+        background-color: #A13520;
+        color: #FFF9EB;
+        text-decoration: none;
+        padding: 10px 20px;
+        border: 1px solid #A13520;
+        border-radius: 5px;
+        width: fit-content;
+    }
+    
+    .EsiMFD img {
+        position: absolute; 
+        top: 0; /
+        left: 25%; 
+        max-width: 50%; 
+        z-index: 1; 
+    }
+    
+    
+    /* Etusivun sääntä esittely*/
     
     .EsiRule {
-        text-align: left;
+        position: relative; 
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        flex-direction: column; 
+        margin: 2% 2%;
+        max-width: 80%;
+        margin-left: 10%;
+        border: 3px solid #A13520; 
+        padding: 10px; 
+    }
+    
+    .EsiDML {
+        position: relative; 
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px; 
+    }
+    
+    .textDML {
+        flex: 1;
+        text-align: center; 
+        margin-top: 90%;
+        
+    }
+    
+    .EsiDML img {
+        position: absolute; 
+        top: 0; 
+        left: 25%; 
+        max-width: 50%; 
+        z-index: 1; 
+    }
+    
+    
+    /* Kauppa */
+    
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+      }
+      
+      .content {
+        flex-basis: 48%; 
+        margin-bottom: 20px; 
+        text-align: center; 
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center; 
+      }
+      
+      .container img {
+        max-width: 30%;
+        display: block; 
+        margin: 0 auto; 
+      }
+      
+      .container p {
+        margin-top: 20px;
+        text-align: center;
+        
+      }
+    
+      .containerrule {
+        text-align: center;
+        margin: 10px 10px;
+      }
+    
+      .containerrule img {
+        max-width: 15%;
+        display: block; 
+        margin: 0 auto; 
+        margin-bottom:20px ;
+      }
+    
+      .btnnowork {
+        font-family: 'Times New Roman', Times, serif;
+        background-color: #A13520;
+        color: #FFF9EB;
+        text-decoration: none;
+        padding: 10px 20px;
+        border: 1px solid #A13520;
+        border-radius: 5px;
+        margin-top: 10px; 
+        margin: 10px auto;
+        width: fit-content;
+    
+        }
+    
+    /* Meistä */
+    
+    .historia {
+        margin: 4%;
     }
     
     .meista {
+        margin: 4%;
+    }
+    
+    /* Yhteystiedot */
+    
+    .yhttie {
         text-align: center;
     }
-    
-    .me {
-        text-align: right;
-    }
-    
-    .yritys {
-        text-align: left;
-    }
-    
-    
     
     
     /* footer */
     
     .footer {
-        background: #A13520; /* Background color */
-        position: fixed; /* Fixed position */
+        background-color: #A13520;
+        color: #FFF9EB;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
         left: 0;
         bottom: 0;
-        width: 100%; /* Full width */
-        height: 80px; /* Adjust height as needed */
-        text-align: center; /* Center-align the content */
-        color: #FFF9EB; /* Text color */
-        padding-top: 20px; /* Add padding for vertical alignment */
-        box-sizing: border-box; /* Include padding in total height */
-        z-index: 1000; /* Ensure the footer is above other content */
-    }
-    
+        width: 100%;
+        z-index: 1000;
+    }    
 }
 
-@media screen {
+/*Tabletti*/
+
+@media screen and (min-width: 600px){
+    body{
+        background-color: #3D352C;
+        margin: 0;
+        padding-bottom: 20%;
+    }
+    
+        h1 {
+            color: #FFF9EB;
+            font-size: 32;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+        
+        h2 {
+            color: #FFF9EB;
+            font-size: 30;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            
+        }
+        
+        h3 {
+            color: #FFF9EB;
+            font-size: 22;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+        
+        p{
+            color: #ACAEAD;
+            font-size: 16;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        
+        .centre {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        th {
+            font-size: 16;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: #ACAEAD;
+        }
+        
+        ul {
+            font-size: 16;
+            color: #ACAEAD;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    
+    /* navbar */
+    
+    .topnav {
+        background: #A13520;
+        overflow: hidden;
+        text-decoration: none;
+        text-align: right;
+        width: 100%;
+        top: 0%;
+        position: fixed;
+        left: 0%;
+        padding: 1% 1%;
+        margin-bottom: 1%;
+        z-index: 1000; 
+    }
+    
+    .topnav a {
+        color: #FFF9EB;
+        background: #A13520;
+        text-align: left;
+        margin: 1% 2%;
+        font-size: 16px; 
+        text-decoration: none;
+    }
+    
+    .topnav img {
+        max-width: 3%;
+        float: left;
+    }
+    
+    
+    /* Banner + text */
+    
+    .banner {
+        position: relative;
+        background-image: url(images/banner\ \(1\).jpg);
+        height: 600px;
+        background-size: cover;
+        background-position: center;
+        z-index: 1; 
+    }
+    
+    .banner-text {
+        padding-top: 16%;
+        text-align: center;
+    }
+    
+    .cta {
+        position: absolute;
+        top: 40%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+        z-index: 2; 
+        border-radius: 5px;
+    }
+    
+    .btn {
+        font-family: 'Times New Roman', Times, serif;
+        background-color: #A13520;
+        color: #FFF9EB;
+        text-decoration: none;
+        padding: 0.5rem;
+        border: 1px solid #A13520;
+        border-radius: 5px;
+    }
+    /* Etusivun otsikot*/
+    
+    .EtuH2 {
+        padding-top: 2%;
+    }
+    
+    /* Etusivun tarina esittely */
+    
+    .EsiTarina {
+        display: flex;
+        justify-content: center;
+        margin: 2% 2%;
+        max-width: 80%;
+        margin-left: 10%;
+        border: 3px solid #A13520; 
+        padding: 10px; 
+    }
+    
+    .EsiMFD {
+        display: flex;
+        align-items: center;
+    }
+    
+    .textMFD {
+        flex: 1;
+        padding: 0 20px; 
+        
+    }
+    
+    .textMFD h2, .textMFD h3, .textMFD p {
+        text-align: center; 
+    }
+    
+    .buttonContainer {
+        text-align: center; 
+    }
+    
+    .btnEsiMFD {
+        margin-top: 10px; 
+        font-family: 'Times New Roman', Times, serif;
+        background-color: #A13520;
+        color: #FFF9EB;
+        text-decoration: none;
+        padding: 10px 20px;
+        border: 1px solid #A13520;
+        border-radius: 5px;
+        width: fit-content;
+    }
+    
+    .EsiMFD img {
+        max-width: 29%; 
+        order: -1; 
+    }
+    
+    /* Etusivun sääntö esittely*/
+    
+    .EsiRule {
+        display: flex;
+        flex-direction: row-reverse; 
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin: 2% 2%;
+        max-width: 80%;
+        margin-left: 10%;
+        border: 3px solid #A13520; 
+        padding: 10px; 
+    }
+    
+    .EsiDML {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    
+    .textDML {
+        flex: 1;
+        padding: 0 20px; 
+        
+    }
+    
+    .EsiDML img {
+        max-width: 30%;
+        order: 1;
+        padding-top: 10%;
+    }
+    
+    
+    /* Kauppa */
+    
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+      }
+      
+      .content {
+        flex-basis: 48%; 
+        margin-bottom: 20px; 
+        text-align: center; 
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center; 
+      }
+      
+      .container img {
+        max-width: 30%;
+        display: block; 
+        margin: 0 auto; 
+      }
+      
+      .container p {
+        margin-top: 20px;
+        text-align: center;
+        
+      }
+    
+      .containerrule {
+        text-align: center;
+        margin: 10px 10px;
+      }
+    
+      .containerrule img {
+        max-width: 15%;
+        display: block; 
+        margin: 0 auto; 
+        margin-bottom:20px ;
+      }
+    
+      .btnnowork {
+        font-family: 'Times New Roman', Times, serif;
+        background-color: #A13520;
+        color: #FFF9EB;
+        text-decoration: none;
+        padding: 10px 20px;
+        border: 1px solid #A13520;
+        border-radius: 5px;
+        margin-top: 10px; 
+        margin: 10px auto;
+        width: fit-content;
+    
+        }
+    
+    /* Meistä */
+    
+    .historia {
+        margin: 2%;
+    }
+    
+    .meista {
+        margin: 2%;
+    }
+    
+    /* Yhteystiedot */
+    
+    .yhttie {
+        text-align: center;
+    }
+    
+    
+    /* footer */
+    
+    .footer {
+        background-color: #A13520;
+        color: #FFF9EB;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }    
+}
+
+
+/*Suuri näyttö*/
+
+
+@media screen and (min-width: 1200px){
+    
+
+
+    h1 {
+        color: #FFF9EB;
+        font-size: 32;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+    }
+    
+    h2 {
+        color: #FFF9EB;
+        font-size: 30;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+        
+    }
+    
+    h3 {
+        color: #FFF9EB;
+        font-size: 22;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+    }
+    
+    p{
+        color: #ACAEAD;
+        font-size: 16;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    .centre {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    th {
+        font-size: 16;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #ACAEAD;
+    }
+    
+    ul {
+        font-size: 16;
+        color: #ACAEAD;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
 
 /* navbar */
 
@@ -170,7 +666,7 @@ ul {
     left: 0%;
     padding: 1% 1%;
     margin-bottom: 1%;
-    z-index: 1000; /* Ensure the navigation bar stays on top */
+    z-index: 1000; 
 }
 
 .topnav a {
@@ -178,19 +674,25 @@ ul {
     background: #A13520;
     text-align: left;
     margin: 1% 2%;
-    font-size: 16px; /* Added 'px' to the font size */
+    font-size: 16px; 
     text-decoration: none;
 }
+
+.topnav img {
+    max-width: 3%;
+    float: left;
+}
+
 
 /* Banner + text */
 
 .banner {
     position: relative;
     background-image: url(images/banner\ \(1\).jpg);
-    height: 600px;
+    height: 950px;
     background-size: cover;
     background-position: center;
-    z-index: 1; /* Ensure the banner is behind the navigation bar */
+    z-index: 1; 
 }
 
 .banner-text {
@@ -200,10 +702,11 @@ ul {
 
 .cta {
     position: absolute;
-    top: 50%; /* Adjust as needed */
-    left: 50%; /* Adjust as needed */
-    transform: translate(-50%, -50%); /* Center the button */
-    z-index: 2; /* Ensure the button is above the banner */
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 2; 
+    border-radius: 5px;
 }
 
 .btn {
@@ -213,76 +716,184 @@ ul {
     text-decoration: none;
     padding: 0.5rem;
     border: 1px solid #A13520;
+    border-radius: 5px;
 }
-.hedding1 {
-    top: 3%;
+/* Etusivun otsikot*/
+
+.EtuH2 {
+    padding-top: 2%;
+}
+
+/* Etusivun tarina esittely */
+
+.EsiTarina {
+    display: flex;
+    justify-content: center;
+    margin: 2% 2%;
+    max-width: 80%;
+    margin-left: 10%;
+    border: 3px solid #A13520; 
+    padding: 10px; 
 }
 
 .EsiMFD {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin: 2%;
 }
 
-.EsiMFD .textMFD {
+.textMFD {
     flex: 1;
-    padding-right: 20px; /* Adjust as needed */
+    padding: 0 20px; 
+    
 }
 
-.EsiMFD img {
-    width: 100px; /* Adjust width as needed */
-    height: auto;
+.textMFD h2, .textMFD h3, .textMFD p {
+    text-align: center; 
+}
+
+.buttonContainer {
+    text-align: center; 
 }
 
 .btnEsiMFD {
+    margin-top: 10px; 
     font-family: 'Times New Roman', Times, serif;
     background-color: #A13520;
     color: #FFF9EB;
     text-decoration: none;
-    padding: 0.5rem;
+    padding: 10px 20px;
     border: 1px solid #A13520;
+    border-radius: 5px;
+    width: fit-content;
 }
 
+.EsiMFD img {
+    max-width: 19%; 
+    order: -1; 
+    
+}
+
+/* Etusivun sääntä esittely*/
+
 .EsiRule {
-    text-align: left;
+    display: flex;
+    flex-direction: row-reverse; 
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 2% 2%;
+    max-width: 80%;
+    margin-left: 10%;
+    border: 3px solid #A13520; 
+    padding: 10px; 
+}
+
+.EsiDML {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.textDML {
+    flex: 1;
+    padding: 0 20px; 
+    
+}
+
+.EsiDML img {
+    max-width: 20%;
+    order: 1;
+    padding-top: 0;
+}
+
+
+/* Kauppa */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .content {
+    flex-basis: 48%; 
+    margin-bottom: 20px; 
+    text-align: center; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+  }
+  
+  .container img {
+    max-width: 30%;
+    display: block; 
+    margin: 0 auto; 
+  }
+  
+  .container p {
+    margin-top: 20px;
+    text-align: center;
+    
+  }
+
+  .containerrule {
+    text-align: center;
+    margin: 10px 10px;
+  }
+
+  .containerrule img {
+    max-width: 15%;
+    display: block; 
+    margin: 0 auto; 
+    margin-bottom:20px ;
+  }
+
+  .btnnowork {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #A13520;
+    color: #FFF9EB;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #A13520;
+    border-radius: 5px;
+    margin-top: 10px; 
+    margin: 10px auto;
+    width: fit-content;
+
+    }
+
+/* Meistä */
+
+.historia {
+    margin: 2%;
 }
 
 .meista {
+    margin: 2%;
+}
+
+/* Yhteystiedot */
+
+.yhttie {
     text-align: center;
-}
-
-.me {
-    text-align: right;
-}
-
-.yritys {
-    text-align: left;
-}
-
-.hedding1 {
-   text-align: center; 
 }
 
 
 /* footer */
 
 .footer {
-    background: #A13520; /* Background color */
-    position: fixed; /* Fixed position */
+    background-color: #A13520;
+    color: #FFF9EB;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
     left: 0;
     bottom: 0;
-    width: 100%; /* Full width */
-    height: 80px; /* Adjust height as needed */
-    text-align: center; /* Center-align the content */
-    color: #FFF9EB; /* Text color */
-    padding-top: 20px; /* Add padding for vertical alignment */
-    box-sizing: border-box; /* Include padding in total height */
-    z-index: 1000; /* Ensure the footer is above other content */
+    width: 100%;
 }
 
 }
-
 
 
 
