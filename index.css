@@ -173,7 +173,7 @@ body{
     
     .EsiMFD img {
         position: absolute; 
-        top: 0; /
+        top: 0; 
         left: 25%; 
         max-width: 50%; 
         z-index: 1; 
